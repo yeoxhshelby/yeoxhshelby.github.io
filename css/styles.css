@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@font-face {
+    font-family: Bakso Sapi;
+    src: url(fonts/BaksoSapi.otf) format('otf');
+}
+
+@keyframes fling-minislide {
+	25%{opacity:1;} 
+	40%{opacity:0;}
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+	padding: 5px 5px;
+	line-height: 1.5em;
+	margin: 10px 15px;
+
+}
+
+
+.drk:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000;
+    opacity:0.5;
+}
+
+.carousel-caption > h2, h4{
+	font-family: Bakso Sapi;
+}
+
+
+.banner{
+	background:url(../img/bannerfinal.jpg) no-repeat center / cover;
+	min-height: 25vh;
+}
+
+.navbar {
+    background-color: #111;
+}
+  
+.navbar a {
+    float: left;
+    color: #bebebe;
+    text-align: center;
+    padding: 12px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Bakso Sapi;
+}
+
+.navbar-nav > li{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+  
+.navbar a:hover {
+    font-size: large ;
+    color: white;
+}
+  
+.navbar a.active {
+    text-decoration: underline;
+    color: white;
+}
+
+.picOfSelf{
+    width: 180px;
+    height: 180px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.details{
+    font-family: Bakso Sapi;
+    text-align: center;
+} 
+
+.bIntro, .iAndHobbies{
+    font-family: Bakso Sapi;
+    margin-top: 20px;
+    color: #021f54;
+	margin-left: 20px;
+}
+
+.hobby, .interest, .intro1, .intro2{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+} 
+
+/* Footer Styles */
+footer{
+	position: absolute;
+	background: #FFAC9E;
+	height: auto;
+	width: 100vw;
+	padding-top: 20px;
+	color: #111;
+
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3{
+	font-family: Bakso Sapi;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 3rem 1rem 0;
+}
+
+.socials li{
+	margin: 0 20px;
+}
+
+.socials a{
+	text-decoration: none;
+	color: #111;
+}
+
+.socials a i{
+	font-size: 2rem;
+	transition: color .4s ease;
+}
+
+.socials a:hover i{
+	color:#444;
+}
+
+.footer-bottom{
+	background: #FFAC9E;
+	width: 100vw;
+	padding-top: 20px 0;
+	text-align: center;
+}
+
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* index.html styles */
+.aboutMeBox, .schoolBox, .courseAndCareerBox,.feedbackBox {
+	float: left;
+	font-family: Bakso Sapi;
+	color: white;
+	text-align: center;
+	width: 25%;
+	height: 160px;
+	padding: 10px 10px 10px 10px;
+}
+
+.aboutMeBox{
+	background: #021f54;
+}
+
+
+.schoolBox {
+	background: #631878;
+}
+
+
+.courseAndCareerBox {
+	background: #9c1f4d;
+}
+
+.feedbackBox {
+	background: #004e63;
+}
+
+#userIcon, #bookIcon, #briefcase, #commentIcon{
+	width: 100px;
+	height: 100px;
+}
+
+/* Mini Slideshow Styles on aboutMe page */
+.fling-minislide {
+	width: 340px; 
+	height: 300px; 
+	overflow: hidden; 
+	position: relative;
+	margin-top: 2px;
+}
+
+.fling-minislide img{ 
+	position:absolute; 
+	animation:fling-minislide 12s infinite; 
+	opacity:0; 
+	width: 100%; 
+	height: auto;
+}
+
+.fling-minislide img:nth-child(4){
+	animation-delay:3s;
+}
+.fling-minislide img:nth-child(3){
+	animation-delay:6s;
+}
+.fling-minislide img:nth-child(2){
+	animation-delay:9s;
+}
+.fling-minislide img:nth-child(1){
+	animation-delay:12s;
+}
+
+/* Table Styles */
+table{
+	border:2px outset #111;
+	border-collapse:collapse;
+	margin-bottom: 20px;
+}
+
+table.awards th, table.awards td{
+	border: 2px solid #111;
+	padding: 3px;
+	vertical-align: middle;
+}
+
+table.awards th{
+	font-family: Bakso Sapi;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+table.awards td{
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.9rem;
+}
+
+table.awards thead{
+	background-color: #ffc8a2;
+}
+
+col#firstCol{
+	background: #fee1e8;
+}
+
+col#awardCol{
+	background: #fee9da;
+}
+
+.fairfield{
+	width: 100%;
+    height: 40vh;
+}
+/* image credit : https://fairfieldmethodistsec.moe.edu.sg/ */
+
+.singaporePoly{
+	width: 100%;
+    height: 40vh;
+}
+
+.polyintro{
+	float: right;
+	width: 346px;
+	height: 195px;
+	margin-bottom: 10px;
+}
+
+.expContent > h1{
+	font-family: Bakso Sapi;
+	background-color: #ffdbb7;
+	text-align: center;
+	vertical-align: middle;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.3rem;
+}
+
+.polyContent > h1{
+	font-family: Bakso Sapi;
+	background-color: #ffdbb7;
+	text-align: center;
+	vertical-align: middle;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.3rem;
+}
+
+figcaption{
+	font-family: 'Poppins';
+	margin-right: 20px; ;
+}
+
+.coding, .ui_ux{
+	width: 260px;
+	height: 160px;
+	margin-top: 30px;
+	border:  5px solid #555;
+	margin-bottom: 10px;
+}
+
+.courseContent > h1{
+	font-family: Bakso Sapi;
+	font-size: 1.5em;
+	margin-left: 20px;
+	margin-top: 10px;
+	position: relative; top: 10px;
+	color: #9c1f4d;
+}
+
+.courseContent p{
+	margin-right: 20px;
+}
+
+/* List Styles */
+.courseContent li{
+	font-family: 'Poppins', sans-serif;;
+	padding: 2px;
+}
+
+.courseContent li,ol{
+	margin-left: 5px;
+}
+
+.carousel-caption > h1{
+	font-family: Bakso Sapi;
+	color: #000;
+}
+
+
+.jobs{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.jobs .card{
+	position: relative;
+	width: 400px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #f7e5cb;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 20px;
+}
+
+.jobs .card ::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.jobs .card .icon{
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+	color: white;
+	font-family: Bakso Sapi;
+	font-size: 1.3rem;
+}
+
+.jobs .card .icon img{
+	width: 220px;
+	height: 140px;
+	filter: brightness(40%);
+	border-radius: 10px;
+}
+
+
+.jobs .card .content{
+	position: relative;
+	height: 215px;
+	overflow: hidden;
+}
+
+.jobs .card.active .content{
+	height: auto;
+}
+.jobs .card .content::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 220px;
+	background: linear-gradient(transparent, #f7e5cb);
+}
+
+.jobs .card.active .content::before{
+	display: none;
+}
+
+.jobs .card .content h3{
+	color: #111;
+	font-size: 1.4em;
+	font-family: Bakso Sapi;
+	margin-bottom: 10px;
+}
+
+.jobs .card .content p{
+	color: #111;
+	font-family: 'Poppins';
+	padding: 5px;
+}
+
+.more, .more2, .more3, .more4{
+	position: relative;
+	padding: 10px 15px;
+	margin-top: 15px;
+	display: inline-block;
+	cursor: pointer;
+	color: #111;
+	font-family: Bakso Sapi;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.more:hover, .more2:hover, .more3:hover, .more4:hover{
+	color: #444;
+	text-decoration: underline;
+}
+
+.card.active .more, .card.active .more2, .card.active .more3, .card.active .more4{
+	color: #555;
+}
+
+.jobs .card .more::before, .jobs .card .more2::before, .jobs .card .more3::before, .jobs .card .more4::before{
+	content: 'Read more';
+}
+
+.jobs .card.active .more::before, .jobs .card.active .more2::before, .jobs .card.active .more3::before, .jobs .card.active .more4::before{
+	content: 'Read Less';
+}
+
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.block{
+	width: 100%;
+	max-height: 800px;
+	background-color: #faf0e6;
+	margin: auto;
+	margin-bottom: 20px;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px grey;
+}
+
+button{
+	padding: 5px;
+	text-align: center;
+}
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Author : Shelby Yeo
+        Date : 2 June 2021
+        Filename : feedback.html
+    -->
+    <meta charset="utf-8" />
+    <title>Feedback</title>
+    <link href = "css/stylesheet_feedback.css" rel = "stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/cfc74988ed.js"></script>
+    <script src="./js/functions.js"></script>
+
+</head>
+
+<div class="banner"></div>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="aboutMe.html" class="nav-link">About Me</a></li>
+				<li class="nav-item"><a href="schoolExperiences.html" class="nav-link">Schooling Experiences</a></li>
+				<li class="nav-item"><a href="courseAndCareer.html" class="nav-link">Career Prospects in DIT</a></li>
+				<li class="nav-item"><a href="feedback.html" class="nav-link active">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="container_box">
+                    <h1>&bull; Feedback Form &bull;</h1>
+                    <div class="underline"></div>
+                    <p>Fields with an asterisk * are required</p>
+                    <div class="text-center">
+                        <img src="img/feedbackicon.png" alt="">
+                        <!-- Icons made by Freepik (www.flaticon.com) -->
+                    </div>
+
+                <form action="#" method="post" id="contact_form" onsubmit="return submitFunction()">
+    <div class="row">
+      <div class="form-class col-sm-12 col-md-6 col-lg-6">
+        <label for="name_input"></label>
+        <input type="text" placeholder="MY NAME IS*" name="name" id="name_input" required>
+      </div>
+
+      <div class="form-class col-sm-12 col-md-6 col-lg-6">
+        <label for="email_input"></label>
+        <input type="email" placeholder="MY E-MAIL IS*" name="email" id="email_input" required>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="form-class col-12">
+            <label for="gender">
+                <select name="gender" id="gender" required>
+                    <option value="" selected disabled>GENDER*</option>
+                    <option value="order2">FEMALE</option>
+                    <option value="order2">MALE</option>
+                    <option value="order4">RATHER NOT SAY</option>
+                 </select>
+            </label><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-class col-12">
+            <label for="visit"><b>WHEN DID YOU VISIT MY WEBSITE?*</b></label><br>
+            <input name="visitDate" id="visit" type="date" required/><br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <label for="search"><b>HOW DID YOU FIND MY WEBSITE?</b></label><br>
+            <input type="checkbox" id="search" name="searchEngine" value="searchengine">
+            <label for="search"> Search Engine</label><br>
+            <input type="checkbox" id="social" name="socialMedia" value="media">
+            <label for="social">Social Media</label><br>
+            <input type="checkbox" id="friend" name="friendRec" value="friendR">
+            <label for="friend">Friends</label><br>
+            <input type="checkbox" id="others" name="othersopt" value="Others">
+            <label for="others">Others</label><br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-class col-12">
+            <label><b>HOW USEFUL IS THE INFORMATION ON MY WEBSITE
+                IN HELPING YOU KNOW MORE ABOUT POLY? <u>(1: Not useful, 5: Very useful)*</u></b></label><br>
+                <input type="radio" name="rating" id="rate1" value="1" required/>
+                <label for="rate1" class="radio-inline">1</label>
+                <input type="radio" name="rating" id="rate2" value="2"/>
+                <label for="rate2" class="radio-inline">2</label>
+                <input type="radio" name="rating" id="rate3" value="3"/>
+                <label for="rate3" class="radio-inline">3</label>
+                <input type="radio" name="rating" id="rate4" value="4"/>
+                <label for="rate4" class="radio-inline">4</label>
+                <input type="radio" name="rating" id="rate5" value="5"/>
+                <label for="rate5" class="radio-inline">5</label><br><br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-class col-12">
+            <div class="message">
+                <label for="message_input"><b>ANY FEEDBACK OR COMMENTS?</b></label>
+                <textarea name="message" placeholder="TYPE HERE.." id="message_input"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      <div class="text-center submit">
+        <input type="submit" value="Submit" id="form_button"/>
+      </div>
+
+      <div class="text-center reset">
+        <input id="resetbtn" type="button" onclick="resetFunction()" value="Reset">
+      </div>
+
+
+    </form><!-- // End form -->
+  </div><!-- // End #container -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+  
+
+    <footer>
+        <div class="footer-content">
+            <h3>Check out my social media or contact me!</h3>
+            <ul class="socials">
+                <li><a href="tel:+6586612972"><i class="fa fa-phone"></i></a></li>
+                <li><a href="mailto:yeoxhshelby@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://www.instagram.com/hehshelby/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/yeo-xun-hui-shelby-4aa224213/"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 Shelby Yeo.</p>
+        </div>
+    </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
